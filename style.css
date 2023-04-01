@@ -1,0 +1,132 @@
+:root {
+  /* Layout */
+  --mobile-screen: 375px;
+  --desktop-screen: 1440px;
+
+  /* Fonts */
+  --barlow-font: "Barlow", sans-serif;
+  --fraunces-font: "Fraunces", serif;
+  --font-size: 1.8rem;
+  --semi-weight: 600;
+  --bold-weight: 700;
+  --black-weight: 900;
+
+  /* Colors */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  /* graphic design text */
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  /* photography text */
+  --dark-blue: hsl(198, 62%, 26%);
+  /* footer */
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--barlow-font);
+  font-size: var(--font-size);
+  font-weight: var(--semi-weight);
+  background-color: var(--white);
+  color: var(--dark-grayish-blue);
+}
+
+header {
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  height: 8.8rem;
+  padding-inline: 3rem;
+}
+
+.header-container {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.header-container > ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  color: var(--white);
+}
+
+.header-container ul > a li {
+  font-size: 1.4rem;
+}
+
+.header-container .contact {
+  background-color: var(--white);
+  border-radius: 4rem;
+  color: var(--very-dark-desaturated-blue);
+  font-family: var(--fraunces-font);
+  font-size: 1.2rem;
+  padding: 1.2rem 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo {
+}
+
+/* Hero */
+.hero {
+  padding: 20rem 0rem;
+  background-color: skyblue;
+
+  background-image: url("./images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 75%;
+
+  /* object-fit: cover; */
+  /* outline: 3px solid purple; */
+
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: 3rem;
+  font-family: var(--fraunces-font);
+  letter-spacing: 0.7rem;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.arrow-down img {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+}
