@@ -187,26 +187,28 @@ section.grid > img {
   z-index: -1;
 }
 
-.grid .transform .learn::before {
+.transform .learn::before {
   background-color: yellow;
 }
-.grid .transform .learn:hover::before {
+.transform .learn:hover::before {
   background-color: var(--yellow);
 }
 
-.grid .stand-out .learn::before {
+.stand-out .learn::before {
   background-color: pink;
 }
-.grid .stand-out .learn:hover::before {
+.stand-out .learn:hover::before {
   background-color: var(--soft-red);
 }
 
 .graphic-design {
+  color: var(--dark-desaturated-cyan);
   background-image: url("./images/desktop/image-graphic-design.jpg");
   background-size: cover;
   height: 100%;
 }
 .photography {
+  color: var(--dark-blue);
   background-image: url("./images/desktop/image-photography.jpg");
   background-size: cover;
   height: 100%;
@@ -220,7 +222,6 @@ section.grid > img {
 
 .graphic-design h3,
 .photography h3 {
-  color: var(--very-dark-desaturated-blue);
   font-size: 3rem;
   font-family: var(--fraunces-font);
   text-transform: capitalize;
@@ -228,7 +229,6 @@ section.grid > img {
 
 .graphic-design p,
 .photography p {
-  color: var(--very-dark-grayish-blue);
   font-size: 1.6rem;
   line-height: 2.8rem;
   margin-top: 3rem;
