@@ -22,10 +22,11 @@
   </head>
   <body>
     <header>
-      <div class="header-container">
+      <nav>
         <a href="index.html" class="logo">
           <img src="./images/logo.svg" />
         </a>
+        <img class="hamburger" src="./images/icon-hamburger.svg" alt="" />
         <ul>
           <a>
             <li>About</li>
@@ -40,14 +41,14 @@
             <li class="contact">Contact</li>
           </a>
         </ul>
-      </div>
-    </header>
-    <section class="hero">
+      </nav>
+
       <h1>We are creatives</h1>
       <a class="arrow-down" href="#grid">
         <img src="./images/icon-arrow-down.svg" alt="arrow" />
       </a>
-    </section>
+    </header>
+    <!-- Grid -->
     <section class="grid" id="grid">
       <div class="transform">
         <h2>Transform your brand</h2>
@@ -61,8 +62,8 @@
         </div>
       </div>
 
-      <img src="./images/desktop/image-transform.jpg" alt="transform" />
-      <img src="./images/desktop/image-stand-out.jpg" alt="stand-out" />
+      <div class="transform-image-container"></div>
+      <div class="stand-out-image-container"></div>
 
       <div class="stand-out">
         <h2>Stand out to the right audience</h2>
@@ -101,7 +102,7 @@
     <!-- Testimonials -->
     <section class="testimonials">
       <div class="testimonials-container">
-        <h3>Client testimonials</h3>
+        <h3 class="testimonials-title">Client testimonials</h3>
         <div class="client-container">
           <div class="client">
             <img
