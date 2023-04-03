@@ -274,63 +274,69 @@ section.grid {
 }
 
 /* Testimonials */
-section.testimonials {
-  min-height: 76rem;
-  text-align: center;
+.testimonials {
+  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 70rem;
+  text-align: center;
 }
 
-.testimonials-container {
-  /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.testimonials .testimonials-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 4fr;
   width: 80%;
 }
 
-.testimonials-title {
+.testimonials .testimonials-title {
   color: var(--grayish-blue);
   font-family: var(--fraunces-font);
-  font-size: 2.2rem;
+  font-size: 2rem;
   letter-spacing: 0.5rem;
-  margin-bottom: 8rem;
   text-transform: uppercase;
+  margin-bottom: 4rem;
+  width: 100%;
 }
 
-.client-container {
+.testimonials .client-container {
   display: grid;
   gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
 }
 
-.client > img {
+.testimonials .client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials .client > img {
   border-radius: 50%;
   width: 7.4rem;
 }
 
-.client-testimonial {
+.testimonials .client-testimonial {
   color: var(--dark-grayish-blue);
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
   font-size: var(--font-size);
   line-height: var(--line-height);
-  margin: 6rem 0;
+  margin: 5rem 0;
 }
 
-.client-name {
+.testimonials .client-name {
   color: var(--very-dark-desaturated-blue);
   font-family: var(--fraunces-font);
   font-size: 1.9rem;
   font-weight: var(--black-weight);
-  margin-bottom: 1rem;
 }
 
-.client-role {
+.testimonials .client-role {
   font-size: 1.6rem;
   color: var(--grayish-blue);
-  margin-bottom: 4rem;
 }
 
 /* Footer */
@@ -405,18 +411,21 @@ section.testimonials {
   /* Services @768px */
 
   /* Testimonials @768px */
-  .testimonials-container {
+  .testimonials .testimonials-container {
+    grid-template-rows: 1fr;
     width: 90%;
   }
-  .testimonials-title {
+  .testimonials .testimonials-title {
     font-size: 1.8rem;
-    margin: 6rem;
-    width: 100%;
+    margin: 5rem auto;
   }
-  .client-container {
-    grid-template-columns: repeat(1, 1fr);
+  .testimonials .client-container {
+    grid-template-columns: 1fr;
   }
-  .client > img {
+  .testimonials .client {
+    margin-bottom: 5rem;
+  }
+  .testimonials .client > img {
     width: 10rem;
   }
 }
