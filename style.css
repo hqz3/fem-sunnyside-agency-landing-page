@@ -55,6 +55,8 @@ body {
   font-weight: var(--semi-weight);
   background-color: var(--white);
   color: var(--dark-grayish-blue);
+  margin: auto;
+  max-width: 1440px;
 }
 
 header {
@@ -69,7 +71,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .header-container > ul {
@@ -143,7 +145,6 @@ section.grid > img {
 
 .transform,
 .stand-out {
-  /* background-color: cyan; */
   margin: auto;
   width: 60%;
 }
@@ -201,29 +202,45 @@ section.grid > img {
   background-color: var(--soft-red);
 }
 
-.graphic-design {
+/* Services */
+.graphic-design-container {
   color: var(--dark-desaturated-cyan);
   background-image: url("./images/desktop/image-graphic-design.jpg");
-  background-size: cover;
-  height: 100%;
 }
-.photography {
+.photography-container {
   color: var(--dark-blue);
   background-image: url("./images/desktop/image-photography.jpg");
+}
+
+.graphic-design-container,
+.photography-container {
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.graphic-design-container > div,
+.photography-container > div {
   height: 100%;
 }
 
-.graphic-design,
-.photography {
-  position: relative;
-  text-align: center;
+.graphic-design-container .graphic-design,
+.photography-container .photography {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
 }
 
 .graphic-design h3,
 .photography h3 {
-  font-size: 3rem;
   font-family: var(--fraunces-font);
+  font-size: 3rem;
   text-transform: capitalize;
 }
 
@@ -231,14 +248,5 @@ section.grid > img {
 .photography p {
   font-size: 1.6rem;
   line-height: 2.8rem;
-  margin-top: 3rem;
-}
-
-.graphic-design > div,
-.photography > div {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
+  margin-top: 2rem;
 }
