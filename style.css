@@ -132,7 +132,6 @@ header {
 /* Grid */
 section.grid {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
@@ -146,7 +145,7 @@ section.grid > img {
 .transform,
 .stand-out {
   margin: auto;
-  width: 60%;
+  width: 70%;
 }
 
 .transform > h2,
@@ -165,7 +164,6 @@ section.grid > img {
 }
 
 .grid .learn-container {
-  display: inline-block;
   padding: 0 0.8rem;
   position: absolute;
 }
@@ -174,6 +172,7 @@ section.grid > img {
   color: var(--very-dark-desaturated-blue);
   font-family: var(--fraunces-font);
   font-size: 1.6rem;
+  font-weight: var(--black-weight);
   text-transform: uppercase;
 }
 
