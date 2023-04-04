@@ -26,6 +26,8 @@
   --dark-grayish-blue: hsl(232, 10%, 55%);
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
+  --light-green: #90d4c5;
+  /* --dark-green: #25564b; */
 }
 
 *,
@@ -275,8 +277,6 @@ header .arrow-down img {
 
 /* Testimonials */
 .testimonials {
-  /* DELETE DELETE DELETE */
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,6 +341,82 @@ header .arrow-down img {
 }
 
 /* Footer */
+
+footer {
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  background-color: var(--light-green);
+  height: 75rem;
+  width: 100%;
+  text-align: center;
+}
+
+footer .footer-images-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer .footer-images-container > div {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+footer .milk {
+  background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
+}
+footer .orange {
+  background-image: url("./images/desktop/image-gallery-orange.jpg");
+}
+footer .cone {
+  background-image: url("images/desktop/image-gallery-cone.jpg");
+}
+footer .sugar {
+  background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+}
+
+footer .footer-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+footer .footer-logo {
+  filter: brightness(0) invert(24%) sepia(11%) saturate(1380%)
+    hue-rotate(118deg) brightness(92%) contrast(97%);
+  position: absolute;
+  top: 22.5%;
+  width: 18rem;
+}
+
+footer .footer-info-container ul {
+  display: flex;
+  gap: 4rem;
+}
+
+footer .footer-info-container ul:first-of-type {
+  position: absolute;
+  top: 45%;
+}
+
+footer .footer-info-container ul li {
+  color: var(--dark-moderate-cyan);
+  font-size: 2rem;
+}
+footer .footer-info-container ul li:hover {
+  color: var(--white);
+}
+
+footer .social-media {
+  position: absolute;
+  bottom: 15%;
+}
+footer .social-media img:hover {
+  filter: brightness(0) invert(98%) sepia(7%) saturate(7%) hue-rotate(232deg)
+    brightness(115%) contrast(100%);
+}
 
 /* --- --- --- --- --- --- --- --- --- */
 
@@ -411,5 +487,9 @@ header .arrow-down img {
   }
   .testimonials .client > img {
     width: 10rem;
+  }
+
+  footer .footer-images-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
