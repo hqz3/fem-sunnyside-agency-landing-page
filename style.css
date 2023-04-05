@@ -72,51 +72,6 @@ header {
   position: relative;
 }
 
-header .hamburger-container {
-  position: relative;
-}
-
-header .hamburger {
-  cursor: pointer;
-  display: none;
-}
-
-header .hamburger-menu.hide {
-  opacity: 0;
-}
-
-header .hamburger-menu {
-  background-color: var(--white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-  padding: 4rem 0;
-  position: absolute;
-  top: 7.5rem;
-  right: 0;
-  transition: opacity 0.5s;
-  width: 35rem;
-  z-index: 10;
-}
-
-header .hamburger-menu li:not(.contact) {
-  font-size: 2.4rem;
-}
-
-header .hamburger-menu::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(-100%);
-
-  height: 0;
-  width: 0;
-  border-bottom: 30px solid var(--white);
-  border-left: 30px solid transparent;
-}
-
 header nav {
   display: flex;
   justify-content: space-between;
@@ -127,6 +82,19 @@ header nav {
   width: 100%;
 }
 
+header .hamburger-container {
+  position: relative;
+}
+
+header .hamburger-icon {
+  cursor: pointer;
+  display: none;
+}
+
+header .menu.show {
+  opacity: 1;
+}
+
 header .menu {
   color: var(--white);
   display: flex;
@@ -134,11 +102,11 @@ header .menu {
   gap: 5rem;
 }
 
-header li {
+header .menu li {
   font-size: 1.8rem;
 }
 
-header .contact {
+header .menu .contact {
   background-color: var(--white);
   border-radius: 4rem;
   color: var(--very-dark-desaturated-blue);
@@ -148,7 +116,7 @@ header .contact {
   text-align: center;
   text-transform: uppercase;
 }
-header .contact:hover {
+header .menu .contact:hover {
   background-color: skyblue;
   color: var(--white);
 }
@@ -486,14 +454,40 @@ footer .social-media img:hover {
   header h1 {
     font-size: 3.2rem;
   }
-  header .hamburger {
+  header .hamburger-icon {
     display: block;
   }
   header .menu {
-    display: none;
+    background-color: var(--white);
+    color: var(--grayish-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    opacity: 0;
+    padding: 4rem 0;
+    position: absolute;
+    top: 7.5rem;
+    right: 0;
+    transition: opacity 0.5s;
+    width: 35rem;
+    z-index: 10;
   }
-  header .contact {
+  header .menu li:not(.contact) {
+    font-size: 2.4rem;
+  }
+  header .menu .contact {
     background-color: var(--yellow);
+  }
+  header .menu::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 0;
+    width: 0;
+    border-bottom: 30px solid var(--white);
+    border-left: 30px solid transparent;
   }
 
   .grid {
