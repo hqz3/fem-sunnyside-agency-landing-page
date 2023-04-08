@@ -17,173 +17,171 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
     </style>
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
+
   <body>
-    <header>
-      <nav>
-        <a href="index.html" class="logo">
-          <img src="./images/logo.svg" />
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__logo">
+          <img class="header__logo-image" src="./images/logo.svg" />
         </a>
 
-        <div class="hamburger-container">
+        <nav class="header__nav link">
           <img
-            class="hamburger-icon"
+            class="header__hamburger-icon"
             src="./images/icon-hamburger.svg"
-            alt="hamburger icon"
+            alt="Hamburger Icon"
           />
-          <ul class="menu">
-            <a>
+          <ul class="header__menu">
+            <a class="link">
               <li>About</li>
             </a>
-            <a>
+            <a class="link">
               <li>Services</li>
             </a>
-            <a>
+            <a class="link">
               <li>Projects</li>
             </a>
-            <a>
-              <li class="contact">Contact</li>
+            <a class="link link--contact">
+              <li>Contact</li>
             </a>
           </ul>
-        </div>
-      </nav>
-      <h1>We are creatives</h1>
-      <a class="arrow-down" href="#grid">
+        </nav>
+      </div>
+      <h1 class="header__title">We are creatives</h1>
+      <a class="header__arrow-down" href="#grid">
         <img src="./images/icon-arrow-down.svg" alt="down arrow" />
       </a>
     </header>
-    <!-- Grid -->
+
     <section class="grid" id="grid">
-      <div class="transform">
-        <h2>Transform your brand</h2>
-        <p>
+      <div class="grid__transform">
+        <h2 class="grid__title">Transform your brand</h2>
+        <p class="grid__description">
           We are a full-service creative agency specializing in helping brands
           grow fast. Engage your clients through compelling visuals that do most
           of the marketing for you.
         </p>
-        <div class="learn-wrapper">
-          <a href="#" class="learn">Learn more</a>
+        <div class="grid__learn">
+          <a class="text--yellow" href="#">Learn more</a>
         </div>
       </div>
 
-      <div class="transform-image-container"></div>
-      <div class="stand-out-image-container"></div>
+      <div class="grid__image grid__transform-image"></div>
+      <div class="grid__image grid__stand-out-image"></div>
 
-      <div class="stand-out">
-        <h2>Stand out to the right audience</h2>
-        <p>
+      <div class="grid__stand-out">
+        <h2 class="grid__title">Stand out to the right audience</h2>
+        <p class="grid__description">
           Using a collaborative formula of designers, researchers,
           photographers, videographers, and copywriters, we’ll build and extend
           your brand in digital places.
         </p>
-        <div class="learn-wrapper">
-          <a href="#" class="learn">Learn more</a>
+        <div class="grid__learn">
+          <a class="text--red" href="#">Learn more</a>
         </div>
       </div>
-      <!-- Services -->
-      <div class="graphic-design-container">
-        <div></div>
-        <div class="graphic-design">
-          <h3>Graphic design</h3>
-          <p>
+
+      <div class="grid__image grid__service grid__graphic-design-image">
+        <div>
+          <h3 class="grid__service-title">Graphic design</h3>
+          <p class="grid__service-description">
             Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients’
             attention.
           </p>
         </div>
       </div>
-      <div class="photography-container">
-        <div></div>
-        <div class="photography">
-          <h3>Photography</h3>
-          <p>
+      <div class="grid__image grid__service grid__photography-image">
+        <div>
+          <h3 class="grid__service-title">Photography</h3>
+          <p class="grid__service-description">
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
           </p>
         </div>
       </div>
     </section>
-    <!-- Testimonials -->
+
     <section class="testimonials">
-      <div class="testimonials-container">
-        <h3 class="testimonials-title">Client testimonials</h3>
-        <div class="client-container">
-          <div class="client">
-            <img
-              src="./images/image-emily.jpg"
-              alt="Emily"
-              class="client-image"
-            />
-            <p class="client-testimonial">
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit.
-            </p>
-            <p class="client-name">Emily R.</p>
-            <p class="client-role">Marketing Director</p>
-          </div>
-          <div class="client">
-            <img
-              src="./images/image-thomas.jpg"
-              alt="Thomas"
-              class="client-image"
-            />
-            <p class="client-testimonial">
-              Sunnyside’s enthusiasm coupled with their keen interest in our
-              brand’s success made it a satisfying and enjoyable experience.
-            </p>
-            <p class="client-name">Thomas S.</p>
-            <p class="client-role">Chief Operating Officer</p>
-          </div>
-          <div class="client">
-            <img
-              src="./images/image-jennie.jpg"
-              alt="Jennie"
-              class="client-image"
-            />
-            <p class="client-testimonial">
-              Incredible end result! Our sales increased over 400% when we
-              worked with Sunnyside. Highly recommended!
-            </p>
-            <p class="client-name">Jennie F.</p>
-            <p class="client-role">Business Owner</p>
-          </div>
-        </div>
+      <h3 class="testimonials__title">Client testimonials</h3>
+      <div class="testimonials__client">
+        <img
+          class="testimonials__image"
+          src="./images/image-emily.jpg"
+          alt="Emily"
+        />
+        <p class="testimonials__text">
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
+        </p>
+        <p class="testimonials__name">Emily R.</p>
+        <p class="testimonials__role">Marketing Director</p>
+      </div>
+
+      <div class="testimonials__client">
+        <img
+          class="testimonials__image"
+          src="./images/image-thomas.jpg"
+          alt="Thomas"
+        />
+        <p class="testimonials__text">
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <p class="testimonials__name">Thomas S.</p>
+        <p class="testimonials__role">Chief Operating Officer</p>
+      </div>
+
+      <div class="testimonials__client">
+        <img
+          class="testimonials__image"
+          src="./images/image-jennie.jpg"
+          alt="Jennie"
+        />
+        <p class="testimonials__text">
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <p class="testimonials__name">Jennie F.</p>
+        <p class="testimonials__role">Business Owner</p>
       </div>
     </section>
-    <!-- Footer -->
-    <footer>
-      <div class="footer-images-container">
-        <div class="milk"></div>
-        <div class="orange"></div>
-        <div class="cone"></div>
-        <div class="sugar"></div>
+
+    <footer class="footer">
+      <div class="footer__images">
+        <div class="footer__images-milk"></div>
+        <div class="footer__images-orange"></div>
+        <div class="footer__images-cone"></div>
+        <div class="footer__images-sugar"></div>
       </div>
-      <div class="footer-info-container">
-        <img class="footer-logo" src="./images/logo.svg" alt="logo" />
-        <ul>
-          <a>
+      <div class="footer__info">
+        <img class="footer__logo" src="./images/logo.svg" alt="logo" />
+        <ul class="footer__menu">
+          <a class="link">
             <li>About</li>
           </a>
-          <a>
+          <a class="link">
             <li>Services</li>
           </a>
-          <a>
+          <a class="link">
             <li>Projects</li>
           </a>
         </ul>
-        <ul class="social-media">
-          <a>
+        <ul class="footer__social-media">
+          <a class="link">
             <img src="./images/icon-facebook.svg" alt="Facebook" />
           </a>
-          <a>
+          <a class="link">
             <img src="./images/icon-instagram.svg" alt="Instagram" />
           </a>
-          <a>
+          <a class="link">
             <img src="./images/icon-twitter.svg" alt="Twitter" />
           </a>
-          <a>
+          <a class="link">
             <img src="./images/icon-pinterest.svg" alt="Pinterest" />
           </a>
         </ul>
