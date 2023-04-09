@@ -144,7 +144,7 @@ header {
   color: var(--white);
   font-size: 3.8rem;
   font-family: var(--secondary-font);
-  font-weight: var(--bold-weight);
+  font-weight: var(--black-weight);
   letter-spacing: 0.95rem;
 
   position: absolute;
@@ -303,7 +303,7 @@ header {
   align-content: center;
   justify-items: center;
   width: 100%;
-  height: 37.2rem;
+  height: 37.15rem;
 }
 
 .testimonials__image {
@@ -312,7 +312,7 @@ header {
 }
 
 .testimonials__text {
-  font-family: var(--very-dark-grayish-blue);
+  color: var(--very-dark-grayish-blue);
   line-height: var(--line-height);
   padding: 5.4rem 2rem;
   text-align: center;
@@ -332,8 +332,8 @@ header {
 .footer {
   background-color: var(--footer-green);
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  height: 73rem;
+  grid-template-rows: 52% 48%;
+  height: 72.7rem;
   margin-top: 3rem;
   text-align: center;
   width: 100%;
@@ -368,7 +368,7 @@ header {
   filter: brightness(0%) invert(24%) sepia(11%) saturate(1380%)
     hue-rotate(118deg) brightness(152%) contrast(97%);
   position: absolute;
-  top: 20%;
+  top: 18%;
   width: 17rem;
 }
 
@@ -376,7 +376,7 @@ header {
   display: flex;
   gap: 5.4rem;
   position: absolute;
-  top: 41%;
+  top: 39%;
 }
 
 .footer__menu a {
@@ -438,7 +438,7 @@ header {
   .header__title {
     font-size: 5.5rem;
     top: 24.5%;
-    letter-spacing: 1.1rem;
+    letter-spacing: 1rem;
   }
   .header__arrow-down {
     top: 45%;
@@ -462,7 +462,7 @@ header {
   }
   .grid__service > div {
     justify-self: center;
-    width: 52.5%;
+    width: 50%;
   }
   .grid__service-title {
     font-size: 2.8rem;
@@ -473,6 +473,7 @@ header {
     grid-template-columns: repeat(11, 1fr);
     height: 78rem;
     row-gap: 6rem;
+    column-gap: 5rem;
   }
   .testimonials__title {
     font-size: 2rem;
@@ -499,24 +500,25 @@ header {
     display: flex;
     align-items: center;
     flex-grow: 1;
+    padding: 0;
   }
 
   .footer {
-    grid-template-rows: 3fr 2fr;
-    height: 75rem;
+    grid-template-rows: 5fr 4fr;
+    height: 79.5rem;
     margin: 0;
   }
   .footer__images {
     grid-template-columns: repeat(4, 1fr);
   }
   .footer__logo {
-    top: 22%;
+    top: 21%;
     width: 17.2rem;
   }
   .footer__menu {
-    top: 47%;
+    top: 41%;
   }
   .footer__social-media {
-    bottom: 9%;
+    bottom: 20%;
   }
 }
