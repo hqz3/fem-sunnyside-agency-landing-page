@@ -166,7 +166,7 @@ header {
 
 .grid {
   display: grid;
-  grid-template-rows: repeat(4, 40rem) repeat(2, 55rem);
+  grid-template-rows: repeat(4, minmax(30rem, auto)) repeat(2, 55rem);
   justify-items: center;
   align-items: center;
 }
@@ -189,8 +189,9 @@ header {
 
 .grid__transform,
 .grid__stand-out {
-  width: 85%;
+  margin: 5rem 0;
   text-align: center;
+  width: 85%;
 }
 
 .grid__title {
@@ -332,12 +333,13 @@ header {
 }
 
 .footer {
-  display: grid;
   background-color: var(--footer-green);
+  display: grid;
   grid-template-rows: 1fr 1fr;
   height: 75rem;
-  width: 100%;
+  margin-top: 3rem;
   text-align: center;
+  width: 100%;
 }
 
 .footer__images {
@@ -491,6 +493,7 @@ header {
 
   .footer {
     grid-template-rows: 3fr 2fr;
+    margin: 0;
   }
   .footer__images {
     grid-template-columns: repeat(4, 1fr);
