@@ -25,13 +25,13 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <a href="index.html" class="header__logo">
+        <a class="header__logo" href="index.html">
           <img class="header__logo-image" src="./images/logo.svg" />
         </a>
 
-        <nav class="header__nav link">
+        <nav class="header__nav">
           <img
-            class="header__hamburger-icon"
+            class="header__hamburger-icon link"
             src="./images/icon-hamburger.svg"
             alt="Hamburger Icon"
           />
@@ -45,7 +45,7 @@
             <a class="link">
               <li>Projects</li>
             </a>
-            <a class="link link--contact">
+            <a class="link header__link-contact">
               <li>Contact</li>
             </a>
           </ul>
@@ -66,7 +66,7 @@
           of the marketing for you.
         </p>
         <div class="grid__learn">
-          <a class="text--yellow" href="#">Learn more</a>
+          <a class="grid__learn-text text--yellow" href="#">Learn more</a>
         </div>
       </div>
 
@@ -81,7 +81,7 @@
           your brand in digital places.
         </p>
         <div class="grid__learn">
-          <a class="text--red" href="#">Learn more</a>
+          <a class="grid__learn-text text--red" href="#">Learn more</a>
         </div>
       </div>
 
@@ -153,10 +153,10 @@
 
     <footer class="footer">
       <div class="footer__images">
-        <div class="footer__images-milk"></div>
-        <div class="footer__images-orange"></div>
-        <div class="footer__images-cone"></div>
-        <div class="footer__images-sugar"></div>
+        <div class="grid__image footer__image-milk"></div>
+        <div class="grid__image footer__image-orange"></div>
+        <div class="grid__image footer__image-cone"></div>
+        <div class="grid__image footer__image-sugar"></div>
       </div>
       <div class="footer__info">
         <img class="footer__logo" src="./images/logo.svg" alt="logo" />
@@ -178,6 +178,7 @@
           <a class="link">
             <img src="./images/icon-instagram.svg" alt="Instagram" />
           </a>
+
           <a class="link">
             <img src="./images/icon-twitter.svg" alt="Twitter" />
           </a>
