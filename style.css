@@ -43,6 +43,7 @@ html {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -120,13 +121,7 @@ header {
   right: 0;
 }
 
-.link {
-  cursor: pointer;
-  font-size: var(--font-size);
-  text-decoration: none;
-}
-
-.header__link-contact {
+.header__contact {
   background-color: var(--yellow);
   border-radius: 4rem;
   color: var(--very-dark-desaturated-blue);
@@ -135,7 +130,7 @@ header {
   padding: 1.8rem 3rem;
   text-transform: uppercase;
 }
-.header__link-contact:hover {
+.header__contact:hover {
   color: var(--white);
   background-color: skyblue;
 }
@@ -428,10 +423,10 @@ header {
   .header__menu::before {
     display: none;
   }
-  .link:not(.header__link-contact):hover {
+  .header__menu a:not(.header__contact):hover {
     color: var(--very-dark-desaturated-blue);
   }
-  .header__link-contact {
+  .header__contact {
     background-color: var(--white);
   }
 
