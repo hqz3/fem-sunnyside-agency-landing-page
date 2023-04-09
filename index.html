@@ -25,31 +25,33 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <a class="header__logo" href="index.html">
+        <a href="index.html" class="header__logo" aria-label="Logo">
           <img class="header__logo-image" src="./images/logo.svg" alt="Logo" />
         </a>
-
         <nav class="header__nav">
-          <img
-            class="link header__hamburger-icon"
-            src="./images/icon-hamburger.svg"
-            alt="Hamburger Icon"
-          />
+          <a class="header__hamburger-icon" aria-label="Menu Button">
+            <img src="./images/icon-hamburger.svg" alt="Menu Button" />
+          </a>
           <ul class="header__menu">
-            <li><a>About</a></li>
-            <li><a>Services</a></li>
-            <li><a>Projects</a></li>
-            <li><a class="header__contact">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" class="header__contact">Contact</a></li>
           </ul>
         </nav>
       </div>
       <h1 class="header__title">We are creatives</h1>
-      <a class="header__arrow-down" href="#grid">
-        <img src="./images/icon-arrow-down.svg" alt="down arrow" />
+      <a
+        href="#grid"
+        class="header__arrow-down"
+        aria-label="Arrow to Company Info"
+      >
+        <img src="./images/icon-arrow-down.svg" alt="Down Arrow" />
       </a>
     </header>
 
-    <section class="grid" id="grid">
+    <section class="grid" id="grid" aria-label="Grid">
+      <div class="grid__image grid__transform-image"></div>
       <div class="grid__transform">
         <h2 class="grid__title">Transform your brand</h2>
         <p class="grid__description">
@@ -62,9 +64,7 @@
         </div>
       </div>
 
-      <div class="grid__image grid__transform-image"></div>
       <div class="grid__image grid__stand-out-image"></div>
-
       <div class="grid__stand-out">
         <h2 class="grid__title">Stand out to the right audience</h2>
         <p class="grid__description">
@@ -87,6 +87,7 @@
           </p>
         </div>
       </div>
+
       <div class="grid__image grid__service grid__photography-image">
         <div>
           <h3 class="grid__service-title">Photography</h3>
@@ -98,7 +99,7 @@
       </div>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" aria-label="Client testimonials">
       <h3 class="testimonials__title">Client testimonials</h3>
       <div class="testimonials__client">
         <img
@@ -113,7 +114,6 @@
         <p class="testimonials__name">Emily R.</p>
         <p class="testimonials__role">Marketing Director</p>
       </div>
-
       <div class="testimonials__client">
         <img
           class="testimonials__image"
@@ -127,7 +127,6 @@
         <p class="testimonials__name">Thomas S.</p>
         <p class="testimonials__role">Chief Operating Officer</p>
       </div>
-
       <div class="testimonials__client">
         <img
           class="testimonials__image"
@@ -151,30 +150,30 @@
         <div class="grid__image footer__image-sugar"></div>
       </div>
       <div class="footer__info">
-        <img class="footer__logo" src="./images/logo.svg" alt="logo" />
+        <img class="footer__logo" src="./images/logo.svg" alt="Logo" />
         <ul class="footer__menu">
-          <li><a>About</a></li>
-          <li><a>Services</a></li>
-          <li><a>Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
         </ul>
         <ul class="footer__social-media">
           <li>
-            <a href="#">
+            <a href="#" aria-label="Link to Facebook">
               <img src="./images/icon-facebook.svg" alt="Facebook" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" aria-label="Link to Instagram">
               <img src="./images/icon-instagram.svg" alt="Instagram" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" aria-label="Link to Twitter">
               <img src="./images/icon-twitter.svg" alt="Twitter" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" aria-label="Link to Pinterest">
               <img src="./images/icon-pinterest.svg" alt="Pinterest" />
             </a>
           </li>
