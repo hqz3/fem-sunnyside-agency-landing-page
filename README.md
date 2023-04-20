@@ -44,7 +44,9 @@ Users should be able to:
 
 For this project, my priorities were to design the website mobile-first while using BEM naming convention to write clearer, more maintainable CSS code that avoids namespace collisions and specificity issues. I tried designing the website as close as possible to the design mockup, for that purpose, PixelParallel was an invaluable design tool.
 
-This site made use of multiple images, which led to deeper research on using `background-image`, `background-size`, and `background-position`. I also tried incorporating accessibility best practices for screen reader users.
+This site made use of multiple images, which led to deeper research on using `background-image`, `background-size`, and `background-position`.
+
+Finally, I incorporated accessibility best practices for screen reader users.
 
 ### Useful Resources
 
