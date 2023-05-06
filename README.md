@@ -6,6 +6,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -22,6 +23,12 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
+
+#### Mobile
+![hqz3 github io_fem-sunnyside-agency-landing-page_ (1)](https://user-images.githubusercontent.com/68667158/236588444-f4f15fe6-ad93-421e-a1cf-b2ec4c1f10d2.png)
+
+#### Desktop
+![hqz3 github io_fem-sunnyside-agency-landing-page_](https://user-images.githubusercontent.com/68667158/236588461-985c3534-577f-44a4-bac0-2a2b3e8214a9.png)
 
 ### Links
 
